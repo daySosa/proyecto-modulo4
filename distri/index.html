@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proyecto Módulo 4</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="jumbotron text-center">
+    <h1 class="display-4">Mi sitio</h1>
+    <p class="lead">Bootstrap + jQuery + Sass + NPM Scripts</p>
+    <button id="btnContacto" type="button" class="btn btn-outline-success btn-lg" data-toggle="modal"
+      data-target="#modalContacto">Contacto</button>
+  </div>
+
+  <div class="container">
+    <div class="caja-roja">Caja roja (mixin)</div>
+    <div class="caja-verde">Caja verde (mixin)</div>
+    <div class="caja-amarilla">Caja amarilla (mixin)</div>
+  </div>
+
+  <div class="modal fade" id="modalContacto" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Contacto</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar"><span>&times;</span></button>
+        </div>
+        <div class="modal-body">Escríbenos a contacto@ejemplo.com</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

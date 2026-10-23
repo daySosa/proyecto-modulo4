@@ -1,0 +1,28 @@
+$amarillo: #ffc107;
+$rojo: #dc3545;
+$verde: #28a745;
+
+@mixin caja($margen: 20px, $relleno: 15px, $color: $verde) {
+  margin: $margen;
+  padding: $relleno;
+  background-color: $color;
+  color: #fff;
+  border-radius: 6px;
+}
+
+.jumbotron {
+  background-color: $amarillo;
+}
+
+.caja-roja {
+  @include caja(10px, 20px, $rojo);
+}
+
+.caja-verde {
+  @include caja;
+}
+
+.caja-amarilla {
+  @include caja(15px, 10px, $amarillo);
+  color: #000;
+}
